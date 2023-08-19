@@ -1,0 +1,126 @@
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: #F7F7F7;
+  font-family: monospace;  
+  background-color: #232323;  
+}
+.text01{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid #F7F7F7;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation like typewriter */
+.animation{
+  animation: typewriter 4s steps(32) 1s 1 normal both,
+             blinkTextCursor 500ms steps(32) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #F7F7F7}
+  to{border-right-color: transparent;}
+}
+
+#nameColor {
+    color: #46D8A2;
+}
+#nameColorLow {
+  color: #308d6b;
+}
+
+.text02 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 100%;
+}
+
+.div03 {
+  font-family: monospace;
+  text-align: center;
+  color: #999898;
+  transform: translateY(1000%);
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+
+/* For button */
+button {
+  font-size: 12px;
+  color: #999898;
+  font-family: monospace;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #308d6b;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #308d6b;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.audioSize {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 350px;
+    height: 25px;
+    
+}
+
+
+
+
+.div04 {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  
+}
+
+
+
