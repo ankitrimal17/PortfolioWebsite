@@ -55,7 +55,7 @@ body{
   text-align: center;
   color: #999898;
   transform: translateY(1000%);
-  margin-top: 100px;
+  margin-top: 70px;
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
