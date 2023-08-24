@@ -23,6 +23,24 @@ body{
     transform: translateY(-50%);    
 }
 
+@media (max-width: 768px) {
+  .text01 {
+      font-size: 120%; /* Adjust font size for tablets */
+      width: 100%; /* Full width for smaller screens */
+      border-right: none; /* Remove border for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text01 {
+      font-size: 100%; /* Adjust font size for mobile */
+  }
+}
+
+
+
+
+
 /* Animation like typewriter */
 .animation{
   animation: typewriter 4s steps(32) 1s 1 normal both,
